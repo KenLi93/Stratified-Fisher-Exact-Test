@@ -83,3 +83,46 @@ SFET <- function(strata, treatment, nsubjects, nresponders,
 }
 
 
+sfet.bayes <- function(strata, treatment, nsubjects, nresponders,
+                       case, data = NULL, side = c("up", "lower", "both")){
+
+  nstrata <- length(unique(strata))
+
+
+  data <- with(data, data.frame(strata = strata, treatment = treatment,
+                                nsubjects = nsubjects, nresponders = nresponders))
+  s <- sum(nresponders[treatment == case])
+  data.strata <- split(data, data$strata)
+  x <- sapply(data.strata, function(tab) with(tab, nresponders[treatment == case])) ## responders in the treatment group
+  z <- sapply(data.strata, function(tab) with(tab, sum(nresponders))) ## total number of responders
+  n <- sapply(data.strata, function(tab) with(tab, sum(nsubjects))) ## total number of subjects in each stratum
+  m <- sapply(data.strata, function(tab) with(tab, nsubjects[treatment == case])) ## subjects in the treatment group
+
+  m_lower <- pmax(0, z-n+m)
+  m_upper <- pmin(z, m)
+  x_prob <- x_range <- vector(mode = "list", length = nstrata)
+  for(i in 1:nstrata){
+    x_range[[i]] <- m_lower[i]:m_upper[i]
+  }
+
+  for(i in 1:nstrata){
+    x_prob[[i]] <- dhyper(x_range[[i]], m = m[i], n = n[i] - m[i], k = z[i], log=TRUE)
+  }
+
+  #  pv <- 0
+  x_grid <- rowSums(expand.grid(x_range))
+  x_prob_grid <- exp(rowSums(expand.grid(x_prob)))
+
+  if (side == "up") {
+    pv <- sum( x_prob_grid [ x_grid>= s ] )
+  } else if (side == "lower") {
+    pv <- sum( x_prob_grid [ x_grid<= s ] )
+  } else if (side == "both") {
+    pv.up <- sum( x_prob_grid [ x_grid>= s ] )
+    pv.lower <- sum( x_prob_grid [ x_grid<= s ] )
+    pv <- min(1, 2 * min(pv.up, pv.lower))
+  } else {
+    stop("side should be one of \"up\", \"lower\" or \"both\".")
+  }
+  return(pv)
+}

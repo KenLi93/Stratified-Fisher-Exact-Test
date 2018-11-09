@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1541785432910.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8C95FFC1",
+    "lastKnownWriteTime" : 1541786585,
+    "last_content_update" : 1541786585979,
+    "path" : "~/UW/Ken/R_package/SFET/R/SFET_tidy.R",
+    "project_path" : "R/SFET_tidy.R",
+    "properties" : {
+        "cursorPosition" : "204,32",
+        "scrollLine" : "200"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

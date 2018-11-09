@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1539712855992.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1033487950",
+    "id" : "A4258E49",
+    "lastKnownWriteTime" : 1538505866,
+    "last_content_update" : 1538505866,
+    "path" : "~/UW/Ken/R_package/SFET/man/SFET.Rd",
+    "project_path" : "man/SFET.Rd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
