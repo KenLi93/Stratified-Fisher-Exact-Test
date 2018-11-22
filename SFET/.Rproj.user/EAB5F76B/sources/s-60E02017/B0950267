@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1542865984030.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3034404981",
+    "id" : "B0950267",
+    "lastKnownWriteTime" : 1542865871,
+    "last_content_update" : 1542865871,
+    "path" : "P:/git/Stratified-Fisher-Exact-Test/SFET/R/test.R",
+    "project_path" : "R/test.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
