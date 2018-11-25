@@ -194,7 +194,7 @@ sfet_naive_mc <- function(strata, treatment, nsubjects, nresponders,
         rhyper(1,
                m = zz[i],
                n = nn[i] - zz[i],
-               k = nn[i] - mm[i])
+               k = mm[i])
       })
   }) %>% colSums()
 

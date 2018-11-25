@@ -1,5 +1,0 @@
-setwd("//fs2-vip-nfs.nfs.biost.priv/students/qijunl2/Documents/UW/Amy/mass-spec-project")
-
-ssa <- readRDS("SSAphyseqObject.rds")
-
-samp_data <- sample_data(ssa)@.Data
