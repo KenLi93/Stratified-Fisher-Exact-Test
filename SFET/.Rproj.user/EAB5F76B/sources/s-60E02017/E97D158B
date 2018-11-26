@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "956208186",
+    "hash" : "3151869367",
     "id" : "E97D158B",
-    "lastKnownWriteTime" : 1542866495,
-    "last_content_update" : 1542866495,
+    "lastKnownWriteTime" : 1543178414,
+    "last_content_update" : 1543178414418,
     "path" : "P:/git/Stratified-Fisher-Exact-Test/SFET/R/SFET_tidy.R",
     "project_path" : "R/SFET_tidy.R",
     "properties" : {
-        "cursorPosition" : "12,2",
-        "scrollLine" : "0"
+        "cursorPosition" : "228,0",
+        "scrollLine" : "202"
     },
     "relative_order" : 1,
     "source_on_save" : false,

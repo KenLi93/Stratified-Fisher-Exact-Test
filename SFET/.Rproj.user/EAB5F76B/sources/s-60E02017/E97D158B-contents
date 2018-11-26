@@ -40,7 +40,7 @@
 ## case: specify which group is case
 
 SFET <- function(strata, treatment, nsubjects, nresponders,
-                 case, data = NULL, side = c("up")){
+                 case, data = NULL, side = "up"){
 
   nstrata <- strata %>% unique() %>% length()
 
@@ -155,7 +155,7 @@ sfet_bayes <- function(strata, treatment, nsubjects, nresponders,
 }
 
 sfet_naive_mc <- function(strata, treatment, nsubjects, nresponders,
-                          case, data = NULL, side = c("up"),
+                          case, data = NULL, side = "up",
                           sample_size = 20000){
   nstrata <- strata %>% unique() %>% length()
 
@@ -199,11 +199,11 @@ sfet_naive_mc <- function(strata, treatment, nsubjects, nresponders,
   }) %>% colSums()
 
     if (side == "up") {
-      return(mean(ss_null > ss))
+      return(mean(ss_null >= ss))
     } else if (side == "lower") {
       return(mean(ss_null < ss))
     } else if (side == "both") {
-      return(min(1, 2 * min(mean(ss_null > ss), mean(ss_null < ss))))
+      return(min(1, 2 * min(mean(ss_null >= ss), mean(ss_null <= ss))))
     }
 }
 
