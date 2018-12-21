@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544828880888.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2808426938",
+    "id" : "86B6AC9D",
+    "lastKnownWriteTime" : 1543345982,
+    "last_content_update" : 1543345982,
+    "path" : "P:/git/Stratified-Fisher-Exact-Test/SFET/R/SFET_extend.R",
+    "project_path" : "R/SFET_extend.R",
+    "properties" : {
+        "cursorPosition" : "165,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

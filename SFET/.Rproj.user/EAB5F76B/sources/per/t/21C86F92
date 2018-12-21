@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1545015377541.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1474728472",
+    "id" : "21C86F92",
+    "lastKnownWriteTime" : 1545081461,
+    "last_content_update" : 1545081461146,
+    "path" : "P:/git/Stratified-Fisher-Exact-Test/SFET/R/SFET_power.R",
+    "project_path" : "R/SFET_power.R",
+    "properties" : {
+        "cursorPosition" : "174,0",
+        "scrollLine" : "151",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

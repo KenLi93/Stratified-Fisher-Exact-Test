@@ -207,24 +207,24 @@ sfet_naive_mc <- function(strata, treatment, nsubjects, nresponders,
     }
 }
 
-rm(list = ls())
-strata <- rep(1:3, each = 2)
-treatment <- rep(1:2, 3)
-nsubjects <- c(670, 530, 500, 710, 490, 610)
-nresponders <- c(21, 22, 19, 16, 20, 24)
-case <- 1
-tt1 <- system.time(test.p.bayes <- sfet_bayes(strata, treatment, nsubjects, nresponders, case))
-## 0.93915
-## 4.91
-
-tt2 <- system.time(test.p.exact <- SFET(strata, treatment, nsubjects, nresponders, case))
-## 0.395
-## 0.17
-
-tt3 <- system.time(test.p.mc <- sfet_naive_mc(strata, treatment, nsubjects, nresponders,
-                                                          case, data = NULL, side = c("up"),
-                                                          sample_size = 20000))
-## 7.11
-## 0.736
-
-save.image()
+# rm(list = ls())
+# strata <- rep(1:3, each = 2)
+# treatment <- rep(1:2, 3)
+# nsubjects <- c(670, 530, 500, 710, 490, 610)
+# nresponders <- c(21, 22, 19, 16, 20, 24)
+# case <- 1
+# tt1 <- system.time(test.p.bayes <- sfet_bayes(strata, treatment, nsubjects, nresponders, case))
+# ## 0.93915
+# ## 4.91
+#
+# tt2 <- system.time(test.p.exact <- SFET(strata, treatment, nsubjects, nresponders, case))
+# ## 0.395
+# ## 0.17
+#
+# tt3 <- system.time(test.p.mc <- sfet_naive_mc(strata, treatment, nsubjects, nresponders,
+#                                                           case, data = NULL, side = c("up"),
+#                                                           sample_size = 20000))
+# ## 7.11
+# ## 0.736
+#
+# save.image()

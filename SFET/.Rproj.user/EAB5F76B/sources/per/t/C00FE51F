@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544828946147.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2159516964",
+    "id" : "C00FE51F",
+    "lastKnownWriteTime" : 1545015305,
+    "last_content_update" : 1545015305768,
+    "path" : "P:/git/Stratified-Fisher-Exact-Test/SFET/R/SFET_calpha.R",
+    "project_path" : "R/SFET_calpha.R",
+    "properties" : {
+        "cursorPosition" : "116,9",
+        "scrollLine" : "110",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
